@@ -24,24 +24,16 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .orb1{width:500px;height:500px;top:-150px;left:-100px;background:rgba(34,211,238,.07)}
 .orb2{width:600px;height:600px;bottom:-200px;right:-150px;background:rgba(167,139,250,.05)}
 .wrap{max-width:1160px;margin:0 auto;padding:36px 20px 60px;position:relative;z-index:1}
-
-/* ── Header ── */
 .hdr{text-align:center;margin-bottom:44px}
 .hdr-tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--accent);border:1px solid rgba(34,211,238,.25);padding:5px 14px;border-radius:20px;background:rgba(34,211,238,.04);margin-bottom:14px}
 .hdr h1{font-family:'Clash Display',sans-serif;font-size:clamp(26px,5vw,46px);font-weight:700;letter-spacing:-1.5px;line-height:1.1;color:#f0f4ff}
 .hdr h1 em{font-style:normal;background:linear-gradient(120deg,#22d3ee,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hdr p{margin-top:10px;font-size:14px;color:var(--muted)}
-
-/* ── Layout ── */
 .main-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
 @media(max-width:800px){.main-grid{grid-template-columns:1fr}}
 .col-l,.col-r{display:flex;flex-direction:column;gap:16px}
-
-/* ── Cards ── */
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;backdrop-filter:blur(12px)}
 .ctitle{font-family:'Clash Display',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
-
-/* ── Form ── */
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 .fg{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
 .fg label{font-size:11px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
@@ -50,14 +42,10 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .iw input::-webkit-outer-spin-button,.iw input::-webkit-inner-spin-button{-webkit-appearance:none}
 .iw input:focus{border-color:rgba(34,211,238,.45);background:rgba(34,211,238,.04)}
 .iunit{position:absolute;right:13px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--muted);pointer-events:none;font-weight:500}
-
-/* ── Toggles ── */
 .tog-g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .tog{padding:10px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Cabinet Grotesk',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;gap:6px}
 .tog:hover{border-color:rgba(34,211,238,.3);color:var(--text)}
 .tog.on{background:rgba(34,211,238,.1);border-color:rgba(34,211,238,.45);color:var(--accent)}
-
-/* ── Goal buttons ── */
 .goal-g{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
 .goal-b{padding:10px 6px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'Cabinet Grotesk',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:3px}
 .goal-b .ico{font-size:18px}
@@ -65,18 +53,12 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .goal-b.gcut.on{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.4);color:var(--red)}
 .goal-b.gmnt.on{background:rgba(74,222,128,.1);border-color:rgba(74,222,128,.4);color:var(--green)}
 .goal-b.gbulk.on{background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.4);color:var(--accent2)}
-
-/* ── Select ── */
 .sel-w select{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:12px;padding:11px 14px;font-size:14px;font-family:'Cabinet Grotesk',sans-serif;color:var(--text);outline:none;cursor:pointer;appearance:none;transition:border-color .2s}
 .sel-w select:focus{border-color:rgba(34,211,238,.45)}
 .sel-w select option{background:#0d1117}
-
-/* ── Calc button ── */
 .calc-btn{width:100%;padding:15px;border-radius:14px;border:none;background:linear-gradient(135deg,#22d3ee,#0891b2);color:#fff;font-family:'Clash Display',sans-serif;font-size:15px;font-weight:700;letter-spacing:.5px;cursor:pointer;transition:all .25s;box-shadow:0 8px 24px rgba(34,211,238,.18)}
 .calc-btn:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(34,211,238,.28)}
 .calc-btn:active{transform:translateY(0)}
-
-/* ── 3D Character card ── */
 .char-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center}
 #cvs-wrap{width:100%;height:300px;cursor:grab;position:relative}
 #cvs-wrap:active{cursor:grabbing}
@@ -84,13 +66,9 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .char-hint{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding:10px 0 14px}
 .cat-strip{position:absolute;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;z-index:3;pointer-events:none}
 .cat-pill{padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;transition:all .4s}
-
-/* ── Results ── */
 .hidden{display:none}
 .fi{animation:fadeUp .4s ease forwards}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-
-/* BMI */
 .bmi-hero{display:flex;align-items:flex-end;gap:10px;margin-bottom:4px}
 .bmi-num{font-family:'Clash Display',sans-serif;font-size:54px;font-weight:700;line-height:1;transition:color .4s}
 .bmi-sm{margin-bottom:10px;font-size:13px;color:var(--muted)}
@@ -98,8 +76,6 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .bar-track{height:8px;border-radius:4px;position:relative;margin-bottom:6px;background:linear-gradient(90deg,#60a5fa 0% 20%,#4ade80 20% 55%,#fb923c 55% 75%,#f87171 75% 100%)}
 .bar-pin{position:absolute;top:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 10px rgba(0,0,0,.5);transition:left .6s cubic-bezier(.34,1.56,.64,1)}
 .bar-lbs{display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}
-
-/* Ideal weight */
 .iw-bar-track{height:10px;border-radius:5px;background:rgba(255,255,255,.06);position:relative;margin:12px 0 6px}
 .iw-range{position:absolute;top:0;height:100%;border-radius:5px;background:rgba(74,222,128,.2);border:1px solid rgba(74,222,128,.4);transition:all .5s}
 .iw-cur{position:absolute;top:50%;transform:translate(-50%,-50%);width:3px;height:18px;border-radius:2px;transition:left .5s}
@@ -109,13 +85,9 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .iw-lbl{font-size:12px;color:var(--muted)}
 .iw-val{font-family:'Clash Display',sans-serif;font-size:16px;font-weight:600}
 .dtag{display:inline-block;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:600;margin-left:6px}
-
-/* Gauge */
 .gauge-wrap{display:flex;flex-direction:column;align-items:center;padding:4px 0}
 .weekly{display:flex;justify-content:center;gap:6px;margin-top:6px;font-size:12px;align-items:center}
 .wkbadge{padding:3px 10px;border-radius:8px;font-size:12px;font-weight:600}
-
-/* Macros */
 .macro-g{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 .mcard{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:14px;text-align:center;transition:all .3s}
 .mcard:hover{background:rgba(255,255,255,.055);transform:translateY(-2px)}
@@ -126,19 +98,13 @@ body{font-family:'Cabinet Grotesk',sans-serif;background:var(--bg);color:var(--t
 .mbar-track{height:3px;border-radius:2px;background:rgba(255,255,255,.07);margin:6px auto 6px;width:80%}
 .mbar-fill{height:100%;border-radius:2px;transition:width .6s ease}
 .mtip{font-size:10px;color:var(--muted);line-height:1.5}
-
-/* Misc */
 .div{height:1px;background:var(--border);margin:16px 0}
 .tipbox{background:rgba(255,255,255,.025);border:1px solid var(--border);border-left:2px solid var(--accent);border-radius:10px;padding:12px 14px;font-size:12px;color:var(--muted);line-height:1.6;margin-top:14px}
-
-/* Color helpers */
 .c-blue{color:#60a5fa}.c-green{color:#4ade80}.c-orange{color:#fb923c}.c-red{color:#f87171}
 .bd-blue{background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.3);color:#60a5fa}
 .bd-green{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);color:#4ade80}
 .bd-orange{background:rgba(251,146,60,.1);border:1px solid rgba(251,146,60,.3);color:#fb923c}
 .bd-red{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);color:#f87171}
-
-/* ── Footer / Impressum ── */
 footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255,255,255,0.07);padding:40px 20px 32px}
 .ft-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;margin-bottom:32px}
 @media(max-width:700px){.ft-grid{grid-template-columns:1fr}}
@@ -161,8 +127,6 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
 <div class="orb orb2"></div>
 
 <div class="wrap">
-
-  <!-- Header -->
   <div class="hdr">
     <div class="hdr-tag">⚕ WHO Standards · Advanced Health Suite</div>
     <h1>BMI &amp; <em>Calorie</em> Calculator</h1>
@@ -170,11 +134,8 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
   </div>
 
   <div class="main-grid">
-
-    <!-- ═══ LEFT COL ═══ -->
+    <!-- LEFT -->
     <div class="col-l">
-
-      <!-- Metrics -->
       <div class="card">
         <div class="ctitle">Your Metrics</div>
         <div class="row2">
@@ -211,59 +172,42 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
         </div>
       </div>
 
-      <!-- Goal Mode -->
       <div class="card">
         <div class="ctitle">Calorie Goal Mode</div>
         <div class="goal-g">
-          <button class="goal-b gcut"      id="btn-cut"      onclick="setGoal('cut')">
+          <button class="goal-b gcut"    id="btn-cut"      onclick="setGoal('cut')">
             <span class="ico">🔥</span>Lose Weight<span style="font-size:10px;color:var(--muted)">−15–20%</span>
           </button>
-          <button class="goal-b gmnt on"   id="btn-maintain" onclick="setGoal('maintain')">
+          <button class="goal-b gmnt on" id="btn-maintain" onclick="setGoal('maintain')">
             <span class="ico">⚖️</span>Maintain<span style="font-size:10px;color:var(--muted)">Baseline</span>
           </button>
-          <button class="goal-b gbulk"     id="btn-bulk"     onclick="setGoal('bulk')">
+          <button class="goal-b gbulk"   id="btn-bulk"     onclick="setGoal('bulk')">
             <span class="ico">💪</span>Gain Muscle<span style="font-size:10px;color:var(--muted)">+10–15%</span>
           </button>
         </div>
       </div>
 
-      <!-- Ideal Weight (shown after calc) -->
       <div class="card hidden" id="card-ideal">
         <div class="ctitle">Ideal Weight Range</div>
-        <div class="iw-row">
-          <span class="iw-lbl">Min healthy weight</span>
-          <span class="iw-val c-green" id="iw-min">—</span>
-        </div>
-        <div class="iw-row">
-          <span class="iw-lbl">Max healthy weight</span>
-          <span class="iw-val c-green" id="iw-max">—</span>
-        </div>
+        <div class="iw-row"><span class="iw-lbl">Min healthy weight</span><span class="iw-val c-green" id="iw-min">—</span></div>
+        <div class="iw-row"><span class="iw-lbl">Max healthy weight</span><span class="iw-val c-green" id="iw-max">—</span></div>
         <div class="iw-row">
           <span class="iw-lbl">Your weight</span>
-          <div>
-            <span class="iw-val" id="iw-cur-val">—</span>
-            <span class="dtag hidden" id="iw-delta"></span>
-          </div>
+          <div><span class="iw-val" id="iw-cur-val">—</span><span class="dtag hidden" id="iw-delta"></span></div>
         </div>
         <div class="iw-bar-track">
           <div class="iw-range" id="iw-bar-range"></div>
           <div class="iw-cur"   id="iw-bar-cur"></div>
         </div>
-        <div class="iw-bar-lbl">
-          <span id="iw-bl-min">—</span>
-          <span id="iw-bl-mid">—</span>
-          <span id="iw-bl-max">—</span>
-        </div>
+        <div class="iw-bar-lbl"><span id="iw-bl-min">—</span><span id="iw-bl-mid">—</span><span id="iw-bl-max">—</span></div>
         <div class="tipbox">💡 Healthy BMI range (18.5–24.9) is based on standards from the <strong>World Health Organization</strong>.</div>
       </div>
 
       <button class="calc-btn" onclick="calculate()">Calculate Everything →</button>
     </div>
 
-    <!-- ═══ RIGHT COL ═══ -->
+    <!-- RIGHT -->
     <div class="col-r">
-
-      <!-- 3D Character -->
       <div class="char-card">
         <div class="cat-strip">
           <div class="cat-pill" id="cat-pill" style="background:rgba(74,222,128,.12);border:1px solid rgba(74,222,128,.35);color:#4ade80">Normal Weight</div>
@@ -273,7 +217,6 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
         <div class="char-hint">BMI · <span id="live-bmi">22.0</span></div>
       </div>
 
-      <!-- BMI Result -->
       <div class="card hidden" id="card-bmi">
         <div class="ctitle">BMI Analysis</div>
         <div class="bmi-hero">
@@ -281,17 +224,12 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
           <div class="bmi-sm">BMI</div>
         </div>
         <div class="bmi-badge" id="res-bmi-badge">—</div>
-        <div class="bar-track">
-          <div class="bar-pin" id="bar-pin" style="left:50%"></div>
-        </div>
+        <div class="bar-track"><div class="bar-pin" id="bar-pin" style="left:50%"></div></div>
         <div class="bar-lbs"><span>10</span><span>18.5</span><span>25</span><span>30</span><span>40</span></div>
       </div>
 
-      <!-- Calories + Macros -->
       <div class="card hidden" id="card-cal">
         <div class="ctitle">Daily Calorie Goal</div>
-
-        <!-- Arc Gauge -->
         <div class="gauge-wrap">
           <svg width="170" height="105" viewBox="0 0 170 105" style="overflow:visible">
             <path d="M 21 93 A 64 64 0 0 1 149 93" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="10" stroke-linecap="round"/>
@@ -301,16 +239,11 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
             <text id="gauge-kcal" x="85" y="76" text-anchor="middle" fill="#e2e8f8" font-size="22" font-weight="700" font-family="'Clash Display',sans-serif">—</text>
             <text x="85" y="91" text-anchor="middle" fill="#4a5568" font-size="9" letter-spacing="1" font-family="'Cabinet Grotesk',sans-serif">KCAL / DAY</text>
           </svg>
-          <div class="weekly">
-            <span class="wkbadge" id="wk-badge" style="background:rgba(74,222,128,.12);color:#4ade80">—</span>
-          </div>
+          <div class="weekly"><span class="wkbadge" id="wk-badge">—</span></div>
         </div>
-
         <div class="div"></div>
         <div class="ctitle">Macro Breakdown</div>
-
         <div class="macro-g">
-          <!-- Protein -->
           <div class="mcard">
             <div class="mico">🥩</div>
             <div class="mname">Protein</div>
@@ -319,7 +252,6 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
             <div class="mbar-track"><div class="mbar-fill" id="mb-p" style="width:0%;background:#f87171"></div></div>
             <div class="mtip" id="mt-p">—</div>
           </div>
-          <!-- Carbs -->
           <div class="mcard">
             <div class="mico">🌾</div>
             <div class="mname">Carbs</div>
@@ -328,7 +260,6 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
             <div class="mbar-track"><div class="mbar-fill" id="mb-c" style="width:0%;background:#facc15"></div></div>
             <div class="mtip">Primary energy fuel source</div>
           </div>
-          <!-- Fats -->
           <div class="mcard">
             <div class="mico">🥑</div>
             <div class="mname">Fats</div>
@@ -338,15 +269,13 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
             <div class="mtip">Hormones &amp; nutrient absorption</div>
           </div>
         </div>
-
         <div class="tipbox" id="goal-tip">—</div>
       </div>
+    </div>
+  </div>
+</div>
 
-    </div><!-- /col-r -->
-  </div><!-- /main-grid -->
-</div><!-- /wrap -->
-
-<!-- ═══ IMPRESSUM FOOTER ═══ -->
+<!-- IMPRESSUM -->
 <footer>
   <div style="max-width:1160px;margin:0 auto">
     <div class="ft-grid">
@@ -376,102 +305,79 @@ footer{position:relative;z-index:1;margin-top:60px;border-top:1px solid rgba(255
     <div class="ft-bar">
       <span class="ft-copy">© 2026 Erkan · Berlin · Educational Project · No commercial intent</span>
       <a class="gh-btn" href="https://github.com/ErkanSoftwareDeveloper" target="_blank" rel="noopener noreferrer">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-        </svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         ErkanSoftwareDeveloper
       </a>
     </div>
   </div>
 </footer>
 
-<!-- Three.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
 <script>
-/* ════════════════════════════════════════════════════════
-   STATE
-════════════════════════════════════════════════════════ */
-var gender   = 'male';
-var goalMode = 'maintain';
-var lastResult = null;  // { bmi, baseKcal, cat, w, h }
+/* ══════════════════════════════════════════════════════════
+   ALL CODE LIVES HERE — event listeners wired in window.load
+   so every function is guaranteed defined before they're used
+══════════════════════════════════════════════════════════ */
 
-/* ════════════════════════════════════════════════════════
-   CONSTANTS
-════════════════════════════════════════════════════════ */
-var GOAL_FACTOR  = { cut: 0.825, maintain: 1.0,  bulk: 1.125 };
-// Protein g/kg by goal — higher when cutting to preserve muscle
-var PROTEIN_MULT = { cut: 2.2,   maintain: 1.9,  bulk: 2.0   };
+/* ── State ── */
+var gender     = 'male';
+var goalMode   = 'maintain';
+var lastResult = null; /* { bmi, baseKcal, cat, w, h } */
+
+/* ── Constants ── */
+var GOAL_FACTOR  = { cut:0.825, maintain:1.0,  bulk:1.125 };
 
 var CAT_META = {
-  under:  { label:'Underweight',  numCls:'c-blue',   badgeCls:'bd-blue',   pinBg:'#60a5fa', pillBg:'rgba(96,165,250,.12)',  pillBrd:'rgba(96,165,250,.35)',  pillClr:'#60a5fa' },
-  normal: { label:'Normal Weight',numCls:'c-green',  badgeCls:'bd-green',  pinBg:'#4ade80', pillBg:'rgba(74,222,128,.12)',  pillBrd:'rgba(74,222,128,.35)',  pillClr:'#4ade80' },
-  over:   { label:'Overweight',   numCls:'c-orange', badgeCls:'bd-orange', pinBg:'#fb923c', pillBg:'rgba(251,146,60,.12)',  pillBrd:'rgba(251,146,60,.35)',  pillClr:'#fb923c' },
-  obese:  { label:'Obese',        numCls:'c-red',    badgeCls:'bd-red',    pinBg:'#f87171', pillBg:'rgba(248,113,113,.12)', pillBrd:'rgba(248,113,113,.35)', pillClr:'#f87171' }
+  under:  { label:'Underweight',   numCls:'c-blue',   badgeCls:'bd-blue',   pinBg:'#60a5fa', pillBg:'rgba(96,165,250,.12)',  pillBrd:'rgba(96,165,250,.35)',  pillClr:'#60a5fa' },
+  normal: { label:'Normal Weight', numCls:'c-green',  badgeCls:'bd-green',  pinBg:'#4ade80', pillBg:'rgba(74,222,128,.12)',  pillBrd:'rgba(74,222,128,.35)',  pillClr:'#4ade80' },
+  over:   { label:'Overweight',    numCls:'c-orange', badgeCls:'bd-orange', pinBg:'#fb923c', pillBg:'rgba(251,146,60,.12)',  pillBrd:'rgba(251,146,60,.35)',  pillClr:'#fb923c' },
+  obese:  { label:'Obese',         numCls:'c-red',    badgeCls:'bd-red',    pinBg:'#f87171', pillBg:'rgba(248,113,113,.12)', pillBrd:'rgba(248,113,113,.35)', pillClr:'#f87171' }
 };
 
-/* ════════════════════════════════════════════════════════
-   MATH HELPERS
-════════════════════════════════════════════════════════ */
-function getCat(bmi) {
-  if (bmi < 18.5) return 'under';
-  if (bmi < 25)   return 'normal';
-  if (bmi < 30)   return 'over';
-  return 'obese';
+/* ── Math ── */
+function getCat(bmi)       { return bmi<18.5?'under':bmi<25?'normal':bmi<30?'over':'obese'; }
+function calcBMI(w,h)      { return w / Math.pow(h/100, 2); }
+function calcBMR(w,h,a,g)  { return g==='male' ? 10*w+6.25*h-5*a+5 : 10*w+6.25*h-5*a-161; }
+function bmiBarPct(bmi)    { return Math.min(Math.max(((Math.min(Math.max(bmi,10),40)-10)/30)*100,0),100); }
+function idealWeight(h)    { var m=h/100; return { mn:Math.round(18.5*m*m*10)/10, mx:Math.round(24.9*m*m*10)/10 }; }
+
+/* All three macros are calorie-based so they ALL change when activity level changes.
+   Protein % of kcal varies by goal: cut=30%, maintain=25%, bulk=27%            */
+var PROTEIN_PCT = { cut:0.30, maintain:0.25, bulk:0.27 };
+
+function calcMacros(goalKcal, goal) {
+  var protein = Math.round((goalKcal * PROTEIN_PCT[goal]) / 4);
+  var fats    = Math.round((goalKcal * 0.275) / 9);
+  var carbs   = Math.round((goalKcal - protein*4 - fats*9) / 4);
+  if (carbs < 0) carbs = 0;
+  return { protein:protein, carbs:carbs, fats:fats };
 }
 
-function calcBMI(w, h)      { return w / Math.pow(h / 100, 2); }
-function calcBMR(w, h, a, g){ return g === 'male' ? 10*w + 6.25*h - 5*a + 5 : 10*w + 6.25*h - 5*a - 161; }
-function bmiBarPct(bmi)     { return Math.min(Math.max(((Math.min(Math.max(bmi,10),40)-10)/30)*100, 0), 100); }
-
-function idealWeight(h) {
-  var m = h / 100;
-  return { mn: Math.round(18.5 * m * m * 10) / 10, mx: Math.round(24.9 * m * m * 10) / 10 };
-}
-
-// Returns { protein, carbs, fats } — all goal-aware
-function calcMacros(goalKcal, weightKg, goal) {
-  var pMult   = PROTEIN_MULT[goal];            // g per kg body weight
-  var protein = Math.round(weightKg * pMult);  // g
-  var fats    = Math.round(goalKcal * 0.275 / 9); // 27.5% of kcal → g
-  var carbs   = Math.round((goalKcal - protein * 4 - fats * 9) / 4);
-  if (carbs < 0) carbs = 0; // safety clamp
-  return { protein: protein, carbs: carbs, fats: fats };
-}
-
-/* ════════════════════════════════════════════════════════
-   GENDER TOGGLE
-════════════════════════════════════════════════════════ */
+/* ── Gender toggle ── */
 function setGender(g) {
   gender = g;
-  document.getElementById('btn-male').classList.toggle('on',   g === 'male');
-  document.getElementById('btn-female').classList.toggle('on', g === 'female');
+  document.getElementById('btn-male').classList.toggle('on',   g==='male');
+  document.getElementById('btn-female').classList.toggle('on', g==='female');
   buildChar();
+  if (lastResult) calculate(); /* recalc BMR which depends on gender */
 }
 
-/* ════════════════════════════════════════════════════════
-   GOAL TOGGLE
-════════════════════════════════════════════════════════ */
+/* ── Goal toggle ── */
 function setGoal(g) {
   goalMode = g;
-  document.getElementById('btn-cut').classList.toggle('on',      g === 'cut');
-  document.getElementById('btn-maintain').classList.toggle('on', g === 'maintain');
-  document.getElementById('btn-bulk').classList.toggle('on',     g === 'bulk');
-  if (lastResult) renderGoal();
+  document.getElementById('btn-cut').classList.toggle('on',      g==='cut');
+  document.getElementById('btn-maintain').classList.toggle('on', g==='maintain');
+  document.getElementById('btn-bulk').classList.toggle('on',     g==='bulk');
+  if (lastResult) renderGoal(); /* only re-render goal section, no full recalc needed */
 }
 
-/* ════════════════════════════════════════════════════════
-   LIVE BMI (updates character + pill as user types)
-════════════════════════════════════════════════════════ */
-document.getElementById('inp-h').addEventListener('input', liveBMIUpdate);
-document.getElementById('inp-w').addEventListener('input', liveBMIUpdate);
-
+/* ── Live BMI update (height/weight inputs) ── */
 function liveBMIUpdate() {
   var h = parseFloat(document.getElementById('inp-h').value);
   var w = parseFloat(document.getElementById('inp-w').value);
-  if (h > 100 && h < 250 && w > 20 && w < 300) {
+  if (h>100 && h<250 && w>20 && w<300) {
     var bmi = calcBMI(w, h);
-    document.getElementById('live-bmi').textContent = (Math.round(bmi * 10) / 10).toFixed(1);
+    document.getElementById('live-bmi').textContent = (Math.round(bmi*10)/10).toFixed(1);
     updatePill(getCat(bmi));
     buildChar(bmi, h);
   }
@@ -486,320 +392,256 @@ function updatePill(cat) {
   el.style.color      = m.pillClr;
 }
 
-/* ════════════════════════════════════════════════════════
-   CALCULATE (main button)
-════════════════════════════════════════════════════════ */
+/* ── Main calculate ── */
 function calculate() {
   var h   = parseFloat(document.getElementById('inp-h').value);
   var w   = parseFloat(document.getElementById('inp-w').value);
   var a   = parseFloat(document.getElementById('inp-a').value);
   var act = parseFloat(document.getElementById('inp-act').value);
 
-  if (!h || !w || !a || h < 100 || h > 250 || w < 20 || w > 300 || a < 5 || a > 120) {
+  if (!h||!w||!a || h<100||h>250 || w<20||w>300 || a<5||a>120) {
     alert('Please fill in all fields with valid values.');
     return;
   }
 
-  var bmi      = Math.round(calcBMI(w, h) * 10) / 10;
-  var baseKcal = Math.round(calcBMR(w, h, a, gender) * act);
+  var bmi      = Math.round(calcBMI(w,h)*10)/10;
+  var baseKcal = Math.round(calcBMR(w,h,a,gender) * act);
   var cat      = getCat(bmi);
 
-  lastResult = { bmi: bmi, baseKcal: baseKcal, cat: cat, w: w, h: h };
+  lastResult = { bmi:bmi, baseKcal:baseKcal, cat:cat, w:w, h:h };
 
-  // Show result cards with animation
-  ['card-bmi', 'card-cal', 'card-ideal'].forEach(function(id) {
+  /* Show cards */
+  ['card-bmi','card-cal','card-ideal'].forEach(function(id) {
     var el = document.getElementById(id);
-    el.classList.remove('hidden', 'fi');
-    void el.offsetWidth; // reflow to restart animation
+    el.classList.remove('hidden','fi');
+    void el.offsetWidth;
     el.classList.add('fi');
   });
 
-  // Render BMI section
-  var m = CAT_META[cat];
-  var numEl = document.getElementById('res-bmi-num');
-  numEl.textContent = bmi.toFixed(1);
-  numEl.className   = 'bmi-num ' + m.numCls;
-
-  var badge = document.getElementById('res-bmi-badge');
-  badge.textContent = m.label;
-  badge.className   = 'bmi-badge ' + m.badgeCls;
-
+  /* BMI card */
+  var m    = CAT_META[cat];
+  var nEl  = document.getElementById('res-bmi-num');
+  nEl.textContent = bmi.toFixed(1);
+  nEl.className   = 'bmi-num ' + m.numCls;
+  var bEl  = document.getElementById('res-bmi-badge');
+  bEl.textContent = m.label;
+  bEl.className   = 'bmi-badge ' + m.badgeCls;
   document.getElementById('bar-pin').style.left       = bmiBarPct(bmi) + '%';
   document.getElementById('bar-pin').style.background = m.pinBg;
 
-  // Render ideal weight section
   renderIdealWeight(h, w, cat);
-
-  // Render goal / calorie / macro section
   renderGoal();
 }
 
-/* ════════════════════════════════════════════════════════
-   RENDER GOAL — calories + macros (called on calc AND on goal switch)
-════════════════════════════════════════════════════════ */
+/* ── Render goal section (calories + macros) ── */
 function renderGoal() {
   if (!lastResult) return;
 
   var baseKcal = lastResult.baseKcal;
   var w        = lastResult.w;
   var goalKcal = Math.round(baseKcal * GOAL_FACTOR[goalMode]);
+  var mac      = calcMacros(goalKcal, goalMode);
+  var maxMG    = Math.max(mac.protein, mac.carbs);
 
-  // ── Macros (goal-aware) ──
-  var mac    = calcMacros(goalKcal, w, goalMode);
-  var maxMG  = Math.max(mac.protein, mac.carbs); // for bar scaling
+  /* Gauge arc */
+  var R    = 64, circ = Math.PI*R;
+  var dash = Math.min(goalKcal/4000, 1) * circ;
+  var col  = goalMode==='cut'?'#f87171' : goalMode==='bulk'?'#a78bfa' : '#4ade80';
+  document.getElementById('gauge-fill').setAttribute('stroke-dasharray', dash+' '+circ);
+  document.getElementById('gauge-fill').setAttribute('stroke', col);
+  document.getElementById('gauge-kcal').textContent = goalKcal.toLocaleString();
 
+  /* Weekly badge */
+  var wb = document.getElementById('wk-badge');
+  if (goalMode==='maintain') {
+    wb.textContent='Weight maintenance mode'; wb.style.background='rgba(74,222,128,.1)'; wb.style.color='#4ade80';
+  } else if (goalMode==='cut') {
+    wb.textContent='− 0.35 kg / week est.'; wb.style.background='rgba(248,113,113,.12)'; wb.style.color='#f87171';
+  } else {
+    wb.textContent='+ 0.30 kg / week est.'; wb.style.background='rgba(167,139,250,.12)'; wb.style.color='#a78bfa';
+  }
+
+  /* Macro numbers & bars — all three update together */
   document.getElementById('m-p').textContent = mac.protein;
   document.getElementById('m-c').textContent = mac.carbs;
   document.getElementById('m-f').textContent = mac.fats;
+  document.getElementById('mb-p').style.width = ((mac.protein/maxMG)*100)+'%';
+  document.getElementById('mb-c').style.width = ((mac.carbs/maxMG)*100)+'%';
+  document.getElementById('mb-f').style.width = (Math.min((mac.fats/mac.protein)*80,100))+'%';
 
-  document.getElementById('mb-p').style.width = ((mac.protein / maxMG) * 100) + '%';
-  document.getElementById('mb-c').style.width = ((mac.carbs   / maxMG) * 100) + '%';
-  document.getElementById('mb-f').style.width = (Math.min((mac.fats / mac.protein) * 80, 100)) + '%';
-
-  // ── Protein tip (goal-specific) ──
-  var proteinTips = {
-    cut:      PROTEIN_MULT.cut      + 'g/kg — high to protect muscle in deficit',
-    maintain: PROTEIN_MULT.maintain + 'g/kg — standard maintenance intake',
-    bulk:     PROTEIN_MULT.bulk     + 'g/kg — supports lean muscle growth'
+  /* Protein tip — goal-specific */
+  var ptips = {
+    cut:      '30% of calories — higher to preserve muscle in deficit',
+    maintain: '25% of calories — standard balanced intake',
+    bulk:     '27% of calories — supports lean muscle growth'
   };
-  document.getElementById('mt-p').textContent = proteinTips[goalMode];
+  document.getElementById('mt-p').textContent = ptips[goalMode];
 
-  // ── Arc gauge ──
-  var R    = 64;
-  var circ = Math.PI * R;
-  var dash = Math.min(goalKcal / 4000, 1) * circ;
-  var gaugeColor = goalMode === 'cut' ? '#f87171' : goalMode === 'bulk' ? '#a78bfa' : '#4ade80';
-
-  document.getElementById('gauge-fill').setAttribute('stroke-dasharray', dash + ' ' + circ);
-  document.getElementById('gauge-fill').setAttribute('stroke', gaugeColor);
-  document.getElementById('gauge-kcal').textContent = goalKcal.toLocaleString();
-
-  // ── Weekly estimate badge ──
-  var wb = document.getElementById('wk-badge');
-  if (goalMode === 'maintain') {
-    wb.textContent      = 'Weight maintenance mode';
-    wb.style.background = 'rgba(74,222,128,.1)';
-    wb.style.color      = '#4ade80';
-  } else if (goalMode === 'cut') {
-    wb.textContent      = '− 0.35 kg / week est.';
-    wb.style.background = 'rgba(248,113,113,.12)';
-    wb.style.color      = '#f87171';
-  } else {
-    wb.textContent      = '+ 0.30 kg / week est.';
-    wb.style.background = 'rgba(167,139,250,.12)';
-    wb.style.color      = '#a78bfa';
-  }
-
-  // ── Bottom tip (goal-specific) ──
+  /* Bottom tip — goal-specific */
   var tips = {
-    cut:      '🔥 <strong>Weight Loss:</strong> ' + goalKcal.toLocaleString() + ' kcal/day (~15–20% deficit). Higher protein preserves muscle. Target −0.35 kg/week.',
-    maintain: '⚖️ <strong>Maintenance:</strong> ' + goalKcal.toLocaleString() + ' kcal/day matches your energy expenditure. Focus on food quality and consistency.',
-    bulk:     '💪 <strong>Muscle Gain:</strong> ' + goalKcal.toLocaleString() + ' kcal/day (~10–15% surplus). Pair with resistance training for ~+0.30 kg/week lean gain.'
+    cut:      '🔥 <strong>Weight Loss:</strong> '+goalKcal.toLocaleString()+' kcal/day (~15–20% deficit). Higher protein preserves muscle. Target −0.35 kg/week.',
+    maintain: '⚖️ <strong>Maintenance:</strong> '+goalKcal.toLocaleString()+' kcal/day matches your energy expenditure. Focus on food quality and consistency.',
+    bulk:     '💪 <strong>Muscle Gain:</strong> '+goalKcal.toLocaleString()+' kcal/day (~10–15% surplus). Pair with resistance training for ~+0.30 kg/week lean gain.'
   };
   document.getElementById('goal-tip').innerHTML = tips[goalMode];
 }
 
-/* ════════════════════════════════════════════════════════
-   RENDER IDEAL WEIGHT
-════════════════════════════════════════════════════════ */
+/* ── Ideal weight section ── */
 function renderIdealWeight(h, w, cat) {
-  var iw      = idealWeight(h);
-  var barMin  = Math.max(iw.mn - 14, 30);
-  var barMax  = iw.mx + 14;
-  var span    = barMax - barMin;
-  var minPct  = ((iw.mn - barMin) / span) * 100;
-  var maxPct  = ((iw.mx - barMin) / span) * 100;
-  var curPct  = Math.min(Math.max(((w - barMin) / span) * 100, 0), 100);
-  var m       = CAT_META[cat];
+  var iw     = idealWeight(h);
+  var barMin = Math.max(iw.mn-14, 30), barMax = iw.mx+14, span = barMax-barMin;
+  var minPct = ((iw.mn-barMin)/span)*100;
+  var maxPct = ((iw.mx-barMin)/span)*100;
+  var curPct = Math.min(Math.max(((w-barMin)/span)*100, 0), 100);
+  var m      = CAT_META[cat];
 
-  document.getElementById('iw-min').textContent    = iw.mn + ' kg';
-  document.getElementById('iw-max').textContent    = iw.mx + ' kg';
-  var curEl = document.getElementById('iw-cur-val');
-  curEl.textContent  = w + ' kg';
-  curEl.style.color  = m.pillClr;
+  document.getElementById('iw-min').textContent  = iw.mn+' kg';
+  document.getElementById('iw-max').textContent  = iw.mx+' kg';
+  var cEl = document.getElementById('iw-cur-val');
+  cEl.textContent = w+' kg'; cEl.style.color = m.pillClr;
+  document.getElementById('iw-bar-range').style.left  = minPct+'%';
+  document.getElementById('iw-bar-range').style.width = (maxPct-minPct)+'%';
+  document.getElementById('iw-bar-cur').style.left    = curPct+'%';
+  document.getElementById('iw-bar-cur').style.background = m.pillClr;
+  document.getElementById('iw-bl-min').textContent = Math.round(barMin)+' kg';
+  document.getElementById('iw-bl-mid').textContent = Math.round((barMin+barMax)/2)+' kg';
+  document.getElementById('iw-bl-max').textContent = Math.round(barMax)+' kg';
 
-  document.getElementById('iw-bar-range').style.left       = minPct + '%';
-  document.getElementById('iw-bar-range').style.width      = (maxPct - minPct) + '%';
-  document.getElementById('iw-bar-cur').style.left         = curPct + '%';
-  document.getElementById('iw-bar-cur').style.background   = m.pillClr;
-
-  document.getElementById('iw-bl-min').textContent = Math.round(barMin) + ' kg';
-  document.getElementById('iw-bl-mid').textContent = Math.round((barMin + barMax) / 2) + ' kg';
-  document.getElementById('iw-bl-max').textContent = Math.round(barMax) + ' kg';
-
-  var delta  = w < iw.mn ? iw.mn - w : w > iw.mx ? w - iw.mx : 0;
-  var dir    = w < iw.mn ? 'gain' : w > iw.mx ? 'lose' : null;
-  var dEl    = document.getElementById('iw-delta');
-
+  var delta = w<iw.mn ? iw.mn-w : w>iw.mx ? w-iw.mx : 0;
+  var dir   = w<iw.mn ? 'gain' : w>iw.mx ? 'lose' : null;
+  var dEl   = document.getElementById('iw-delta');
   if (dir) {
     dEl.classList.remove('hidden');
-    dEl.textContent      = dir === 'gain' ? '+' + delta.toFixed(1) + ' kg to gain' : '−' + delta.toFixed(1) + ' kg to lose';
-    dEl.style.background = dir === 'gain' ? 'rgba(96,165,250,.12)' : 'rgba(248,113,113,.12)';
-    dEl.style.color      = dir === 'gain' ? '#60a5fa' : '#f87171';
-  } else {
-    dEl.classList.add('hidden');
-  }
+    dEl.textContent      = dir==='gain' ? '+'+delta.toFixed(1)+' kg to gain' : '−'+delta.toFixed(1)+' kg to lose';
+    dEl.style.background = dir==='gain' ? 'rgba(96,165,250,.12)' : 'rgba(248,113,113,.12)';
+    dEl.style.color      = dir==='gain' ? '#60a5fa' : '#f87171';
+  } else { dEl.classList.add('hidden'); }
 }
 
-/* ════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    THREE.JS 3D CHARACTER
-════════════════════════════════════════════════════════ */
-var TH_scene, TH_ren, TH_cam, TH_animId;
-var bodyGrp = null, lArm = null, rArm = null;
-var isDrag = false, prevX = 0, rotY = 0, tick = 0;
-var curBMI = 22, curH = 170;
+══════════════════════════════════════════════════════════ */
+var TH_scene, TH_ren, TH_cam;
+var bodyGrp=null, lArm=null, rArm=null;
+var isDrag=false, prevX=0, rotY=0, tick=0;
+var curBMI=22, curH=170;
 
 function initThree() {
   var T    = window.THREE;
   var wrap = document.getElementById('cvs-wrap');
-  var W    = wrap.clientWidth || 300;
-  var H    = 300;
+  var W    = wrap.clientWidth||300, H=300;
 
   TH_scene = new T.Scene();
-  TH_cam   = new T.PerspectiveCamera(46, W / H, 0.1, 100);
+  TH_cam   = new T.PerspectiveCamera(46, W/H, 0.1, 100);
   TH_cam.position.set(0, 0.9, 5.2);
   TH_cam.lookAt(0, 0.7, 0);
 
-  TH_ren = new T.WebGLRenderer({ antialias: true, alpha: true });
+  TH_ren = new T.WebGLRenderer({ antialias:true, alpha:true });
   TH_ren.setSize(W, H);
-  TH_ren.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  TH_ren.setPixelRatio(Math.min(window.devicePixelRatio,2));
   TH_ren.setClearColor(0x000000, 0);
   TH_ren.shadowMap.enabled = true;
   wrap.appendChild(TH_ren.domElement);
 
-  // Lights
   TH_scene.add(new T.AmbientLight(0xffffff, 0.65));
-  var dl = new T.DirectionalLight(0xffffff, 0.95); dl.position.set(4, 6, 4); dl.castShadow = true; TH_scene.add(dl);
-  var rl = new T.DirectionalLight(0x22d3ee, 0.45); rl.position.set(-3, 2, -3); TH_scene.add(rl);
-  var pl = new T.PointLight(0xa78bfa, 0.35, 20); pl.position.set(0, 3, -2); TH_scene.add(pl);
-
-  // Ground disc
-  var disc = new T.Mesh(
-    new T.CircleGeometry(0.9, 32),
-    new T.MeshBasicMaterial({ color: 0x22d3ee, transparent: true, opacity: 0.07, side: T.DoubleSide })
-  );
-  disc.rotation.x = -Math.PI / 2;
-  disc.position.y = -1.4;
-  TH_scene.add(disc);
+  var dl=new T.DirectionalLight(0xffffff,0.95); dl.position.set(4,6,4); dl.castShadow=true; TH_scene.add(dl);
+  var rl=new T.DirectionalLight(0x22d3ee,0.45); rl.position.set(-3,2,-3); TH_scene.add(rl);
+  var pl=new T.PointLight(0xa78bfa,0.35,20); pl.position.set(0,3,-2); TH_scene.add(pl);
+  var disc=new T.Mesh(new T.CircleGeometry(0.9,32),new T.MeshBasicMaterial({color:0x22d3ee,transparent:true,opacity:.07,side:T.DoubleSide}));
+  disc.rotation.x=-Math.PI/2; disc.position.y=-1.4; TH_scene.add(disc);
 
   buildChar();
-  animLoop();
 
-  // Drag to rotate
+  (function loop(){
+    requestAnimationFrame(loop);
+    tick+=0.016;
+    if(bodyGrp){
+      bodyGrp.rotation.y = rotY + Math.sin(tick*.35)*.025;
+      bodyGrp.position.y = Math.sin(tick*.7)*.018;
+      if(lArm) lArm.rotation.z =  Math.sin(tick*.7)*.04+0.13;
+      if(rArm) rArm.rotation.z = -Math.sin(tick*.7)*.04-0.13;
+    }
+    TH_ren.render(TH_scene, TH_cam);
+  })();
+
+  /* drag-to-rotate */
   wrap.addEventListener('mousedown',  function(e){ isDrag=true; prevX=e.clientX; });
-  wrap.addEventListener('touchstart', function(e){ isDrag=true; prevX=e.touches[0].clientX; }, { passive:true });
+  wrap.addEventListener('touchstart', function(e){ isDrag=true; prevX=e.touches[0].clientX; }, {passive:true});
   window.addEventListener('mouseup',  function(){ isDrag=false; });
   window.addEventListener('touchend', function(){ isDrag=false; });
-  window.addEventListener('mousemove', function(e){
-    if (!isDrag) return;
-    rotY += (e.clientX - prevX) * 0.012;
-    prevX = e.clientX;
-  });
-  window.addEventListener('touchmove', function(e){
-    if (!isDrag) return;
-    rotY += (e.touches[0].clientX - prevX) * 0.012;
-    prevX = e.touches[0].clientX;
-  }, { passive:true });
-}
-
-function animLoop() {
-  TH_animId = requestAnimationFrame(animLoop);
-  tick += 0.016;
-  if (bodyGrp) {
-    bodyGrp.rotation.y = rotY + Math.sin(tick * 0.35) * 0.025;
-    bodyGrp.position.y = Math.sin(tick * 0.7) * 0.018;
-    if (lArm) lArm.rotation.z =  Math.sin(tick * 0.7) * 0.04 + 0.13;
-    if (rArm) rArm.rotation.z = -Math.sin(tick * 0.7) * 0.04 - 0.13;
-  }
-  TH_ren.render(TH_scene, TH_cam);
+  window.addEventListener('mousemove',  function(e){ if(!isDrag)return; rotY+=(e.clientX-prevX)*.012; prevX=e.clientX; });
+  window.addEventListener('touchmove',  function(e){ if(!isDrag)return; rotY+=(e.touches[0].clientX-prevX)*.012; prevX=e.touches[0].clientX; }, {passive:true});
 }
 
 function buildChar(bmi, hCm) {
-  if (bmi  !== undefined) curBMI = bmi;
-  if (hCm  !== undefined) curH   = hCm;
-  if (!window.THREE || !TH_scene) return;
-
-  var T   = window.THREE;
-  var cat = getCat(curBMI);
-  var fem = (gender === 'female');
-  var hScale = Math.min(Math.max((curH - 140) / 80, 0.75), 1.28);
-
+  if (bmi!==undefined) curBMI=bmi;
+  if (hCm!==undefined) curH=hCm;
+  if (!window.THREE||!TH_scene) return;
+  var T=window.THREE, cat=getCat(curBMI), fem=(gender==='female');
+  var hScale=Math.min(Math.max((curH-140)/80,.75),1.28);
   if (bodyGrp) TH_scene.remove(bodyGrp);
-
-  var PR = {
-    under:  { tr:.14, br:.12, tH:.70, lR:.08, aR:.065, hR:.13 },
-    normal: { tr:.18, br:.16, tH:.68, lR:.10, aR:.075, hR:.17 },
-    over:   { tr:.24, br:.22, tH:.66, lR:.13, aR:.095, hR:.23 },
-    obese:  { tr:.32, br:.30, tH:.63, lR:.17, aR:.12,  hR:.30 }
+  var PR={
+    under: {tr:.14,br:.12,tH:.70,lR:.08,aR:.065,hR:.13},
+    normal:{tr:.18,br:.16,tH:.68,lR:.10,aR:.075,hR:.17},
+    over:  {tr:.24,br:.22,tH:.66,lR:.13,aR:.095,hR:.23},
+    obese: {tr:.32,br:.30,tH:.63,lR:.17,aR:.12, hR:.30}
   };
-  var P  = PR[cat];
-  var CC = { under:0x60a5fa, normal:0x4ade80, over:0xfb923c, obese:0xf87171 };
-
-  var bMat = new T.MeshLambertMaterial({ color: CC[cat] });
-  var sMat = new T.MeshLambertMaterial({ color: fem ? 0xfde8c8 : 0xf5d0a9 });
-  var hMat = new T.MeshLambertMaterial({ color: fem ? 0x7c3aed : 0x374151 });
-  var dMat = new T.MeshLambertMaterial({ color: 0x1a202c });
-  var eMat = new T.MeshBasicMaterial ({ color: 0x0f172a });
-
-  function cyl(tr, br, h, mat, seg) { return new T.Mesh(new T.CylinderGeometry(tr, br, h, seg||14), mat); }
-  function sph(r,  mat, seg)         { return new T.Mesh(new T.SphereGeometry(r, seg||16, seg||16), mat); }
-
-  var grp   = new T.Group();
-  grp.scale.y = hScale;
-
-  var legH      = 0.88;
-  var legGap    = fem ? P.lR * 1.1 : P.lR * 1.5;
-  var fY        = -1.38;
-  var hipY      = fY + legH;
-  var torsoY    = hipY + P.tH / 2;
-  var shoulderY = hipY + P.tH;
-  var neckY     = shoulderY + 0.06;
-  var headY     = neckY + 0.19;
-  var aLen      = 0.65;
-
-  var lL = cyl(P.lR*.88, P.lR, legH, sMat); lL.position.set(-legGap, hipY - legH/2, 0);
-  var rL = cyl(P.lR*.88, P.lR, legH, sMat); rL.position.set( legGap, hipY - legH/2, 0);
-
-  var lS = new T.Mesh(new T.SphereGeometry(P.lR*1.1, 10, 8), dMat); lS.scale.set(1,.5,1.5); lS.position.set(-legGap, fY+.04, .06);
-  var rS = new T.Mesh(new T.SphereGeometry(P.lR*1.1, 10, 8), dMat); rS.scale.set(1,.5,1.5); rS.position.set( legGap, fY+.04, .06);
-
-  var torso = cyl(P.tr, fem ? P.hR : P.br, P.tH, bMat); torso.position.set(0, torsoY, 0);
-
-  var la = cyl(P.aR*.82, P.aR, aLen, sMat); la.rotation.z =  0.13; la.position.set(-(P.tr + P.aR + .03), shoulderY - aLen/2 + .02, 0);
-  var ra = cyl(P.aR*.82, P.aR, aLen, sMat); ra.rotation.z = -0.13; ra.position.set( (P.tr + P.aR + .03), shoulderY - aLen/2 + .02, 0);
-
-  var neck = cyl(.09, .10, .14, sMat); neck.position.set(0, neckY, 0);
-  var head = sph(.23, sMat, 20);       head.position.set(0, headY, 0);
-
-  var lE = sph(.036, eMat, 8); lE.position.set(-.085, headY+.04, .21);
-  var rE = sph(.036, eMat, 8); rE.position.set( .085, headY+.04, .21);
-
-  if (fem) {
-    var ht  = new T.Mesh(new T.SphereGeometry(.24, 16, 12, 0, Math.PI*2, 0, Math.PI*.55), hMat); ht.position.set(0, headY, 0);
-    var hL2 = cyl(.062, .042, .34, hMat, 8); hL2.position.set(-.215, headY-.1, 0);
-    var hR2 = cyl(.062, .042, .34, hMat, 8); hR2.position.set( .215, headY-.1, 0);
-    grp.add(ht, hL2, hR2);
+  var P=PR[cat], CC={under:0x60a5fa,normal:0x4ade80,over:0xfb923c,obese:0xf87171};
+  var bMat=new T.MeshLambertMaterial({color:CC[cat]});
+  var sMat=new T.MeshLambertMaterial({color:fem?0xfde8c8:0xf5d0a9});
+  var hMat=new T.MeshLambertMaterial({color:fem?0x7c3aed:0x374151});
+  var dMat=new T.MeshLambertMaterial({color:0x1a202c});
+  var eMat=new T.MeshBasicMaterial({color:0x0f172a});
+  function cyl(tr,br,h,m,s){return new T.Mesh(new T.CylinderGeometry(tr,br,h,s||14),m);}
+  function sph(r,m,s){return new T.Mesh(new T.SphereGeometry(r,s||16,s||16),m);}
+  var grp=new T.Group(); grp.scale.y=hScale;
+  var legH=.88, legG=fem?P.lR*1.1:P.lR*1.5;
+  var fY=-1.38,hipY=fY+legH,torsoY=hipY+P.tH/2,shoulderY=hipY+P.tH,neckY=shoulderY+.06,headY=neckY+.19,aLen=.65;
+  var lL=cyl(P.lR*.88,P.lR,legH,sMat); lL.position.set(-legG,hipY-legH/2,0);
+  var rL=cyl(P.lR*.88,P.lR,legH,sMat); rL.position.set( legG,hipY-legH/2,0);
+  var lS=new T.Mesh(new T.SphereGeometry(P.lR*1.1,10,8),dMat); lS.scale.set(1,.5,1.5); lS.position.set(-legG,fY+.04,.06);
+  var rS=new T.Mesh(new T.SphereGeometry(P.lR*1.1,10,8),dMat); rS.scale.set(1,.5,1.5); rS.position.set( legG,fY+.04,.06);
+  var torso=cyl(P.tr,fem?P.hR:P.br,P.tH,bMat); torso.position.set(0,torsoY,0);
+  var la=cyl(P.aR*.82,P.aR,aLen,sMat); la.rotation.z= .13; la.position.set(-(P.tr+P.aR+.03),shoulderY-aLen/2+.02,0);
+  var ra=cyl(P.aR*.82,P.aR,aLen,sMat); ra.rotation.z=-.13; ra.position.set( (P.tr+P.aR+.03),shoulderY-aLen/2+.02,0);
+  var neck=cyl(.09,.10,.14,sMat); neck.position.set(0,neckY,0);
+  var head=sph(.23,sMat,20); head.position.set(0,headY,0);
+  var lE=sph(.036,eMat,8); lE.position.set(-.085,headY+.04,.21);
+  var rE=sph(.036,eMat,8); rE.position.set( .085,headY+.04,.21);
+  if(fem){
+    var ht=new T.Mesh(new T.SphereGeometry(.24,16,12,0,Math.PI*2,0,Math.PI*.55),hMat); ht.position.set(0,headY,0);
+    var hL=cyl(.062,.042,.34,hMat,8); hL.position.set(-.215,headY-.1,0);
+    var hR=cyl(.062,.042,.34,hMat,8); hR.position.set( .215,headY-.1,0);
+    grp.add(ht,hL,hR);
   } else {
-    var ht2 = new T.Mesh(new T.SphereGeometry(.235, 16, 12, 0, Math.PI*2, 0, Math.PI*.5), hMat); ht2.position.set(0, headY, 0);
+    var ht2=new T.Mesh(new T.SphereGeometry(.235,16,12,0,Math.PI*2,0,Math.PI*.5),hMat); ht2.position.set(0,headY,0);
     grp.add(ht2);
   }
-
-  grp.add(lL, rL, lS, rS, torso, la, ra, neck, head, lE, rE);
+  grp.add(lL,rL,lS,rS,torso,la,ra,neck,head,lE,rE);
   TH_scene.add(grp);
-  bodyGrp = grp;
-  lArm    = la;
-  rArm    = ra;
+  bodyGrp=grp; lArm=la; rArm=ra;
 }
 
-/* ════════════════════════════════════════════════════════
-   BOOT — load Three.js then init
-════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════
+   BOOT — everything wired here so all functions exist first
+══════════════════════════════════════════════════════════ */
 window.addEventListener('load', function() {
+
+  /* Input listeners */
+  document.getElementById('inp-h').addEventListener('input', liveBMIUpdate);
+  document.getElementById('inp-w').addEventListener('input', liveBMIUpdate);
+
+  /* Activity level → full recalculate (baseKcal changes so all macros update) */
+  document.getElementById('inp-act').addEventListener('change', function() {
+    if (lastResult) calculate();
+  });
+
+  /* Three.js */
   if (window.THREE) {
     initThree();
   } else {
-    var s    = document.createElement('script');
-    s.src    = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    var s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
     s.onload = initThree;
     document.head.appendChild(s);
   }
@@ -807,4 +649,3 @@ window.addEventListener('load', function() {
 </script>
 </body>
 </html>
-
