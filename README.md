@@ -45,7 +45,7 @@ Includes a real-time **3D body character**, WHO-standard BMI classification, cal
 You can use the calculator directly in your browser without downloading anything.
 
 **Open the Website:**  
-https://erkansoftwaredeveloper.github.io/Stories/
+https://erkansoftwaredeveloper.github.io/bmi_calorie_calculator/
 
 ---
 
